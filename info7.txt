@@ -1,0 +1,41 @@
+Tipos de asincronismo
+
+_ Timers
+_ Tiger (ej eventos)
+_ Resources (ej req a ddbb, un servidro, api, leer archivo de la propia maquina)
+
+Las sentencias asincrónicas siempre tienen un callback.
+
+HTTP
+
+CLIENTE / Request
+URL/IP 
+MÉTODO/VERVO (intención del pedido GET, POST, PUT, DELETE, HEAD, OPTIONS, PATCH)
+BODY: La data que queres enviar (si aplica)
+HEADERS: información de  configuración / metadata
+VERSIÓN DEL PROTOCOLO: 1.1 lo vemos en network > localhost > Request headers > view source.
+
+SERVIDOR / Response
+CÓDIGO: 100s, 200s, 300s, 400s, 500s
+MENSAJE:
+BODY: La data que queres enviar (si aplica)
+HEADERS: información de  configuración / metadata
+VERSIÓN DEL PROTOCOLO: 1.1 lo vemos en network > localhost > Request headers > view source.
+
+
+fetch("http://google.com") //por defalt fetcxh es GET
+Tres pasos en el proceso de fetch:
+1_ Haces el pedido
+2_ El servidor manda un preview con datos del contenido
+3_ Doy formato al contenido recibido
+
+
+
+
+
+API WEB
+API REST
+
+EN UNA API REST ES UN SERVICIO QUE ESTA FUNCIONANDO EN LA WWW Y SE PUEDE CONSUMIR. EL CLIENTE QUE 
+SOLICITA LA INFORMACION NO HABLA EL MISMO IDIOMA QUE EL SERVIDOR. TIENEN DOCUMENTACION QUE ESPECIFICA 
+LAS URL PARA HACER LOS PEDIDOS.

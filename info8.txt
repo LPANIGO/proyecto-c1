@@ -1,0 +1,9 @@
+instalamos react-router-dom
+
+SPA: single page application
+
+SSR: server side rendering
+
+SR: static rendering
+
+al escribir en una ruta /: puedo recibir como variable el valor que le sigue ej: /:id

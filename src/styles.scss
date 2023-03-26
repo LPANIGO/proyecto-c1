@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+html, body, #root {
+    height: 100vh;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+#root > main, #root > header, #root > nav, #root > footer {
+    padding: 1rem;
+} 
+
+#root > main {
+    // flex-grow: 1;
+    background-color: #e6e6e6;
+    padding: 1rem;
+}   
+
+#root > header {
+    background-color: white;  
+    padding: 3.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    & .logo {
+        background-color: #bf071f;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 0.5rem;
+        margin-left: 6rem;
+        font-size: 1.6rem;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+}
+
+#root > nav {
+    background-color: #222222;
+    color: white;
+    padding: 0;
+}
+
+#root > footer {
+    background-color: #222222;;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.loadingP {
+    padding: 2rem;
+    margin-bottom: 40vh;
+}
+
+.nav {
+    &__link{
+        display: inline-block;
+        padding: 1rem 0 1rem 4rem;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
+.cart-widget {
+    color: black;
+    padding-right: 10rem;
+    font-size: 2.2rem;
+}
+
+.itemList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__item {
+        padding: 10px  8px ;
+        margin: 30px 10px 8px 10px;
+        width:18rem;
+        border: solid 2px #00000000;
+        border-radius: 4%;
+        transition: all 0.3s;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        & h3 {
+            height: 6rem;
+        }
+        & img {
+            width: 100%;
+        }
+        &:hover {
+            box-shadow: 0 0 18px 18px #0000002c;
+            border: solid 2px #00000031;
+        }
+    }
+}
+
+.itemListContainerLoader {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 4rem 0;
+    height: 90vh;
+}
+
+.itemDetailContainerLoader {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 4rem 0;
+    height: 90vh;
+}
+
+.itemCount {
+    margin: 1rem 0;
+    &__bl {
+        width: 2rem;
+        padding: 2px 0;
+        border-radius: 25% 0 0 10%;;
+        border: solid 1px #121212;
+        cursor:pointer;
+        background-color: #888888;
+        font-size: 1rem;
+        &:active{
+            background-color: rgb(214, 214, 214);
+        }
+    }
+    &__br {
+        width: 2rem;
+        padding: 2px 0;
+        border-radius:  0 10%  25% 0 ;
+        border: solid 1px #121212;
+        cursor:pointer;
+        background-color: #888888;
+        font-size: 1rem;
+        &:active{
+            background-color: rgb(214, 214, 214);
+        }
+    }
+    &__counter {
+        width: 4rem;
+        background-color: white;;
+        padding: 2px 0;
+        font-size: 1rem;
+        border-radius: 0%;
+        border: solid 1px #121212;
+        border-left: none;
+        border-right: none;
+        text-align: center;
+        display: inline-block;
+    }
+}
+
+.addToCartBtn {
+    width: 8rem;
+    padding: 2px 0;
+    margin-bottom:  1rem;
+    border: solid 1px #121212;
+    border-radius: 3.4px;
+    background-color: #888888   ;
+    cursor:pointer;
+    &:active{
+        background-color: rgb(214, 214, 214);
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem;
+    border: solid 2px #121212;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.itemDetailContainer {
+    display: grid;
+    grid-template-columns:  repeat(1, 0.55fr) repeat(2, 1fr);
+    grid-template-areas: ". a b" ". c c";
+}
+
+.titulo {
+    padding-top: 2rem;
+}
+
+.tituloYFoto{
+    grid-area: a;
+    justify-self: center;
+    padding-top: 2rem;
+}
+
+.contador{
+    grid-area: b;
+    padding-top: 4rem;
+}
+
+.descripcion{
+    grid-area: c;
+    
+    
+}

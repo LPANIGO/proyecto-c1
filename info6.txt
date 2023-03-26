@@ -1,0 +1,50 @@
+ 
+    Este efecto se  ejecuta siempre
+    useEffect(()=>{
+        console.log("Hubo un efecto")
+    })
+    
+    
+    Este efecto se  ejecuta solo despues del primer render
+    useEffect(()=>{
+        console.log("Hubo un efecto")
+    }, [])
+    
+    
+    Este efecto se  ejecuta despues del primer render y cuando cambia el valor de la variable "confirmed"
+    useEffect(()=>{
+        console.log("Hubo un efecto")
+    }, [confirmed])
+    
+
+    Ajax formalmente son las llamada asincronas en jQuery pero tambien se le denomina asi a la api fetch en js vanilla,
+    y a la api axios que no esta incluida en js vanilla.
+
+COMPARACION FOREACH Y MAP
+
+Const arr = [1, 2, 3]
+
+arr.forEach((e,index)=>{ });
+
+const r = arr.map((e,index)=>{ 
+    retunr;
+});
+
+Promesas y asincronismo
+
+const promesa = new Promise((res)=> {
+    res(?)
+})
+
+promesa
+    .then()
+
+promesa
+    .catch()
+
+    .then((contenido)=> {
+        console.log("Salió todo bien)
+    })
+    .catch((error)=> {
+        console.log("Algo salió mal)
+    })

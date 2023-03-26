@@ -1,0 +1,15 @@
+
+
+HOOKS: Son funciones que permite adaptar los componentes para que tengan una nueva funcionalidad. 
+1_ Se ejecutan dentro de un componentes
+2_ No pueden estar dentro de ninguna estructura de flujo
+
+CICLO DE VIDA DE UN COMPONENTE
+
+mount
+update
+- El estado cambia
+- Su padre se actualizó
+- Si los props cambian
+
+unmount
